@@ -1,0 +1,260 @@
+/* Dashboard styles. All classes use the "sc-" prefix to avoid clashing with App.css. */
+
+.sc-page {
+  min-height: 100vh;
+  background: #f5f7fa;
+  color: #1a1a1a;
+}
+
+/* ---------- Navbar ---------- */
+.sc-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  height: 68px;
+  padding: 0 32px;
+  background: #0a1f44;
+  border-bottom: 3px solid #0066b1;
+}
+
+.sc-navbar-left,
+.sc-navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.sc-navbar-divider {
+  width: 1px;
+  height: 28px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.sc-navbar-title {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+}
+
+.sc-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+.sc-profile-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: #0066b1;
+  border-radius: 50%;
+}
+
+.sc-logout {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  font-family: inherit;
+  font-size: 0.85rem;
+  color: #ffffff;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.sc-logout:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* ---------- Content ---------- */
+.sc-main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 24px 56px;
+}
+
+.sc-welcome {
+  margin-bottom: 32px;
+  padding: 32px 36px;
+  background: #ffffff;
+  border-left: 4px solid #0066b1;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(10, 31, 68, 0.08);
+}
+
+.sc-welcome h1 {
+  margin: 0 0 8px;
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: #0a1f44;
+}
+
+.sc-welcome p {
+  margin: 0;
+  color: #5f6b7a;
+}
+
+.sc-section-title {
+  margin: 0 0 16px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #5f6b7a;
+}
+
+/* ---------- Action cards ---------- */
+.sc-actions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.sc-action-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 28px;
+  background: #ffffff;
+  border: 1px solid #e3e8ef;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(10, 31, 68, 0.06);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.sc-action-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(10, 31, 68, 0.12);
+}
+
+.sc-action-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  margin-bottom: 18px;
+  color: #0066b1;
+  background: #e8f1fa;
+  border-radius: 12px;
+}
+
+.sc-action-card h3 {
+  margin: 0 0 8px;
+  font-size: 1.15rem;
+  color: #0a1f44;
+}
+
+.sc-action-card p {
+  flex: 1;
+  margin: 0 0 22px;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: #5f6b7a;
+}
+
+.sc-action-button {
+  padding: 11px 22px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: #0066b1;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.sc-action-button:hover {
+  background: #005391;
+}
+
+.sc-action-button:focus-visible,
+.sc-logout:focus-visible {
+  outline: 3px solid rgba(0, 102, 177, 0.4);
+  outline-offset: 2px;
+}
+
+/* ---------- Stats ---------- */
+.sc-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.sc-stat-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 22px 24px;
+  background: #ffffff;
+  border: 1px solid #e3e8ef;
+  border-radius: 10px;
+}
+
+.sc-stat-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  color: #ffffff;
+  background: #0a1f44;
+  border-radius: 10px;
+}
+
+.sc-stat-value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #0a1f44;
+}
+
+.sc-stat-label {
+  margin-top: 4px;
+  font-size: 0.85rem;
+  color: #5f6b7a;
+}
+
+/* ---------- Placeholder pages (until the real pages are built) ---------- */
+.sc-placeholder h1 {
+  margin: 0 0 8px;
+  color: #0a1f44;
+}
+
+.sc-placeholder a {
+  color: #0066b1;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 720px) {
+  .sc-navbar {
+    padding: 0 16px;
+  }
+
+  .sc-navbar-divider,
+  .sc-navbar-title,
+  .sc-profile-name {
+    display: none;
+  }
+
+  .sc-welcome {
+    padding: 24px 20px;
+  }
+
+  .sc-welcome h1 {
+    font-size: 1.5rem;
+  }
+}
